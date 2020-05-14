@@ -1,5 +1,73 @@
+$body-background: #333;
+$font-color: #fff;
+$primary-color: #292b2c;
+$icon-color: #008ed6;
+$icon-font-size: 30px;
+
+body {
+    background: $body-background;
+    color: $font-color
+}
 .navbar {
     border-bottom: 3px solid #008ed6;
-    background: #292b2c;
+    background: $primary-color;
     opacity: 0.7;
+}
+
+#home-section {
+    background: url('../img/home.jpeg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+
+    .dark-overlay {
+        background: rgba( 0, 0, 0, 0.7);
+        min-height: 700px;
+    }
+
+    .fa {
+        background: #fff;
+        color: $icon-color;
+        padding: 4px;
+        font-size: $icon-font-size;
+        border-radius: 5px;
+    }
+
+    .card-form {
+        opacity: 0.7;
+    }
+
+    .home-inner {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+}
+
+#explore-more{
+    .fa {
+        font-size: $icon-font-size;
+        background: #333;
+        color: #fff;
+        padding: 4px;
+        border-radius: 5px;
+    }
+}
+
+#create-details {
+    .fa {
+        font-size: $icon-font-size;
+        background: #fff;
+        color: $icon-color;
+        padding: 4px;
+        border-radius: 5px;;
+    }
+}
+
+@media(max-width: 768px){
+    #home-section h1 {
+        font-size: 30px;
+    }
 }
